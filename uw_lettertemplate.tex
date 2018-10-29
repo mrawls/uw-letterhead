@@ -1,0 +1,41 @@
+\documentclass{letter}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[headheight=-10pt]{geometry} % can add showframe to [] section to see boxes
+\usepackage{lipsum}
+\usepackage{array}
+
+\geometry{letterpaper, portrait, lmargin = 1in, rmargin = 1in, bmargin = 1in, tmargin = 1in}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{firstpage}{\fancyhf{}\fancyhead[L]{
+    \begin{tabular}{m{60pt}|m{12pt}}
+    \includegraphics[height=38pt, keepaspectratio=true]{W-Logo_Purple.eps} &
+    	\begin{tabular}{l}
+	\textbf{\large Meredith L. Rawls}\\
+	\normalsize Department of Astronomy\\
+	University of Washington\\
+	Box 351580, Seattle, WA  98195\\
+	mrawls@uw.edu
+    	\end{tabular}\tabularnewline
+    \end{tabular}
+    }}
+
+\signature{Meredith L. Rawls}
+
+\begin{document}
+
+\begin{letter}{}
+\opening{Dear Important Person:}
+I am the best at writing letters. You should definitely listen to me.
+
+\lipsum[1-4]
+
+%Sincerely,\\ \\ \\
+%
+%Meredith L. Rawls
+\closing{Sincerely,}
+\end{letter}
+\end{document}
